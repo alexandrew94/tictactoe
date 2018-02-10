@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tic Tac Toe</title>
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+<style type="text/css">
+
+body {
+	font-family: 'Indie Flower', cursive;
+	background-color: #ffce82;
+}
+
+.topAndBottom {
+	border-left: 5px solid black;
+	border-right: 5px solid black;
+	width: 200px;
+	height: 200px;
+}
+
+.middle {
+	border: 5px solid black;
+	width: 200px;
+	height: 200px;
+}
+
+.leftAndRight {
+	border-top: 5px solid black;
+	border-bottom: 5px solid black;
+	width: 200px;
+	height: 200px;
+}
+
+.playerOnePressed {
+	background-color: orange;
+	transition-property: background-color;
+	transition-duration: 0.3s;
+}
+
+.playerTwoPressed {
+	background-color: blue;
+	transition-property: background-color;
+	transition-duration: 0.3s;
+}
+
+table {
+	margin: 0 auto 0 auto;
+}
+
+td {
+	transition-duration: 0.3s;
+	border-radius: 30%;
+	border-top: 5px solid black;
+	border-right: 5px solid black;
+}
+
+#results {
+	font-size: 48px;
+	transition-property: font-size;
+	transition-duration: 3s;
+}
+
+</style>
+
+</head>
+<body>
+
+<h1 align="center">Tic tac toe</h1>
+
+<table>
+	<tr>
+		<td id="sq1"></td>
+		<td id="sq2" class="topAndBottom"></td>
+		<td id="sq3"></td>
+	</tr>
+	<tr>
+		<td id="sq4" class="leftAndRight"></td>
+		<td id="sq5" class="middle"></td>
+		<td id="sq6" class="leftAndRight"></td>
+	</tr>
+	<tr>
+		<td id="sq7"></td>
+		<td id="sq8" class="topAndBottom"></td>
+		<td id="sq9"></td>
+	</tr>
+</table>
+
+<div align="center" id="results"></div>
+<button id="reset">New Game</button>
+
+<script type="text/javascript" src="index.js"></script>
+
+</body>
+</html>
